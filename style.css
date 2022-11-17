@@ -1,0 +1,143 @@
+html,
+body {
+    font-family: "Roboto Thin", sans-serif;
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper {
+    background-color: #eeeeee;
+    height: 100%;
+    padding: 30px;
+}
+
+.widget {
+    overflow: hidden;
+    background-color: white;
+    width: 650px;
+    padding: 30px;
+}
+
+.widget_leftSide,
+.widget_rightSide{
+    float:left;
+    height: 350px;
+}
+
+.autocomplete {
+    padding: 5px;
+    width: 100px;
+}
+
+.timestamp {
+    text-align: center;
+    font-weight: lighter;
+    font-size: 14px;
+    color: #626262;
+    margin:40px auto 25px;
+}
+.bigTempContainer {
+    display: flex;
+    align-items: start;
+    width: 100%;
+    margin: auto;
+}
+.weatherAndTempRect {
+    display: flex;
+    align-items: center;
+    vertical-align: center;
+    horiz-align: right;
+}
+
+#weather_now {
+    font-size: 100px;
+}
+
+.temperature {
+    font-size: 50px;
+}
+
+.celsFar {
+    margin-top: 20px;
+}
+
+.imageName {
+    font-size: 20px;
+    margin: 22px;
+}
+
+.humidityBox {
+    margin-right: 10px;
+}
+
+.windSpeedBox {
+    margin-left: 10px;
+}
+
+.humidity_now,
+.windSpeed_now {
+    margin: 4px;
+}
+
+.widget_rightSide {
+    float:left;
+    margin-left: 10px;
+}
+
+.map {
+    height: 200px;
+    width: 440px;
+}
+
+.future_weather {
+    margin-top: 20px;
+}
+
+.forecastBox {
+    width: 100px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 20px 5px 20px 5px;
+    font-weight: bolder;
+    color: #626262;
+    font-size: 12px;
+}
+
+.day_text {
+    margin-bottom: 10px;
+}
+.material-symbols-outlined{
+    width: 100%;
+    margin: auto;
+}
+
+.humidity_text {
+    font-weight: lighter;
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.temperature,
+.icon_container,
+.humidityBox,
+.windSpeedBox,
+.forecastBox,
+.widget_leftSide {
+    float:left;
+}
+
+.weatherAndTempRect,
+.future_weather,
+.humidityAndWindRect {
+    overflow: hidden;
+}
+
+.material-symbols-outlined,
+.humidity,
+.humidityBox,
+.windSpeed_now,
+.day_text,
+.humidity_text,
+.imageName {
+    text-align: center;
+}

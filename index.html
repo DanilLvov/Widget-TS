@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Widget</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="widget">
+
+
+            <div class="widget_leftSide">
+
+                <div class="cityNameBlock">
+                    Your city
+                    <input class="autocomplete" id="autocomplete" onfocus="this.value=''" type="text"  placeholder="your city...">
+                </div>
+
+                <div class="timestamp" id="timestamp"> </div>
+
+                <div class="forecastBoxBig">
+                    <div class="bigTempContainer">
+                        <div class="weatherAndTempRect">
+                            <div class="icon_container">
+                                <div class="material-symbols-outlined" id="weather_now"> error </div>
+                            </div>
+                            <div class="temperature" id="temperature_now"> -- </div>
+                        </div>
+                        <div class="celsFar" id="celsFar">°C</div>
+                    </div>
+                    <div class="imageName" id="weatherDescription"> -- </div>
+                    <div class="humidityAndWindRect">
+                        <div class="humidityBox">
+                            Humidity
+                            <div class="humidity_now" id="humidity_now"> -- % </div>
+                        </div>
+                        <div class="windSpeedBox">
+                            Wind speed
+                            <div class="windSpeed_now" id="wind_now"> -- km/h </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="widget_rightSide">
+                <div class="map" id="map">
+                    <div class="material-symbols-outlined"> image_not_supported </div>
+                </div>
+                <div class="future_weather">
+
+                    <div class="forecastBox" id="day1" onclick="clickOnBox(0)">
+                        <div class="day_text" id="day1_text"> </div>
+                        <div class="material-symbols-outlined" id="day1_icon"> error </div>
+                        <div class="humidity_text"> Humidity </div>
+                        <div class="humidity" id="day1_humidity"> -- % </div>
+                    </div>
+
+                    <div class="forecastBox" id="day2" onclick="clickOnBox(1)">
+                        <div class="day_text" id="day2_text"> </div>
+                        <div class="material-symbols-outlined" id="day2_icon"> error </div>
+                        <div class="humidity_text"> Humidity </div>
+                        <div class="humidity" id="day2_humidity"> -- % </div>
+                    </div>
+
+                    <div class="forecastBox" id="day3" onclick="clickOnBox(2)">
+                        <div class="day_text" id="day3_text"> </div>
+                        <div class="material-symbols-outlined" id="day3_icon"> error </div>
+                        <div class="humidity_text"> Humidity </div>
+                        <div class="humidity" id="day3_humidity"> -- % </div>
+                    </div>
+
+                    <div class="forecastBox" id="day4" onclick="clickOnBox(3)">
+                        <div class="day_text" id="day4_text"> </div>
+                        <div class="material-symbols-outlined" id="day4_icon"> error </div>
+                        <div class="humidity_text"> Humidity </div>
+                        <div class="humidity" id="day4_humidity"> -- % </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script type="text/javascript"
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6n8Jus-7CTCQlA5MuwvadXxg_qGddqd0&libraries=places"
+            defer
+    ></script>
+</body>
+</html>
